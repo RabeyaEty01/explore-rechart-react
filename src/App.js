@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import MyAreaChart from './components/MyAreaChart/MyAreaChart';
+import MyLineChart from './components/MyLineChart/MyLineChart';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div>
+        <h1>Line Chart</h1>
+      <MyLineChart></MyLineChart>
+      </div>
+      <div>
+        <h1>Area Chart</h1>
+        <MyAreaChart></MyAreaChart>
+      </div>
     </div>
   );
 }
